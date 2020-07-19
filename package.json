@@ -1,6 +1,6 @@
 {
     "private": true,
-    "name": "@gio-js/ark-counterfeit",
+    "name": "@gio-js/ark-counterfeit-plugin",
     "description": "Counterfeit Ark dApp",
     "version": "0.0.1",
     "contributors": [
@@ -31,7 +31,8 @@
     "dependencies": {
         "@arkecosystem/core-container": "2.6.39",
         "@arkecosystem/core-interfaces": "2.6.39",
-        "@arkecosystem/core-transactions": "2.6.39"
+        "@arkecosystem/core-transactions": "2.6.39",
+        "@arkecosystem/crypto": "2.6.39"
     },
     "devDependencies": {
         "@sindresorhus/tsconfig": "0.7.0",
