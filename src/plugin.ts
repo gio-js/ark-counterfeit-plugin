@@ -2,8 +2,8 @@ import { Container, Logger } from "@arkecosystem/core-interfaces";
 import { Handlers } from "@arkecosystem/core-transactions";
 import { defaults } from "./defaults";
 import { BusinessRegistrationTransactionHandler } from "./handlers";
-import {  RegisterManufacturerTransactionHandler } from "./handlers";
 import {  SimpleTransactionHandler } from "./handlers";
+import { RegisterManufacturerTransactionHandler } from "./common/ark-counterfeit-common";
 
 export const plugin: Container.IPluginDescriptor = {
     pkg: require("../package.json"),
