@@ -3,7 +3,9 @@ import { Handlers } from "@arkecosystem/core-transactions";
 import { defaults } from "./defaults";
 import {
     RegisterManufacturerTransactionHandler,
-    RegisterProductTransactionHandler
+    RegisterProductTransactionHandler,
+    TransferProductTransactionHandler,
+    ReceiveProductTransactionHandler
 } from "./common/ark-counterfeit-common/src/handlers/handlers";
 
 export const plugin: Container.IPluginDescriptor = {
@@ -15,6 +17,8 @@ export const plugin: Container.IPluginDescriptor = {
 
         Handlers.Registry.registerTransactionHandler(RegisterManufacturerTransactionHandler);
         Handlers.Registry.registerTransactionHandler(RegisterProductTransactionHandler);
+        Handlers.Registry.registerTransactionHandler(TransferProductTransactionHandler);
+        Handlers.Registry.registerTransactionHandler(ReceiveProductTransactionHandler);
 
         container.resolvePlugin<Logger.ILogger>("logger").info("Registration ark-anticounterfeit-transactions completed.");
     },
